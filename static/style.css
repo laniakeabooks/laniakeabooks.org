@@ -1,0 +1,444 @@
+/* reset */
+html {
+    /* fix line height in all browsers */
+    line-height: 1.15;
+    /* prevent adjustments of font size after orientation changes in iOS */
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    /* remove margin in all browsers */
+    margin: 0;
+}
+
+hr {
+    /* fix height in Firefox */
+    height: 0;
+    /* fix inheritance of border color in Firefox */
+    color: inherit;
+}
+
+abbr[title] {
+    /* fix text decoration in Chrome, Edge, Safari. */
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    /* fix font weight in Edge and Safari */
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+    /* improve consistency of default fonts in all browsers */
+    font-family: monospace;
+    /* correct the odd 'em' font sizing in all browsers */
+    font-size: 1em;
+}
+
+small {
+    /* fix font size in all browsers */
+    font-size: 80%;
+}
+
+/* prevent sub and sup from affecting the line height in all browsers */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+table {
+    /* remove text indentation from table contents in Chrome and Safari */
+    text-indent: 0;
+    /* fix table border color inheritance in Chrome and Safari */
+    border-color: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    /* fix font styles in all browsers */
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    /* remove margin in Firefox and Safari */
+    margin: 0;
+}
+
+button,
+select {
+    /* remove inheritance of text transform in Edge and Firefox */
+    text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    /* fix inability to style clickable types in iOS and Safari */
+    -webkit-appearance: button;
+}
+
+/* remove inner border and padding in Firefox */
+::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+:-moz-focusring {
+    /* restore focus styles unset by the previous rule */
+    outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+    /* remove additional ':invalid' styles in Firefox */
+    box-shadow: none;
+}
+
+progress {
+    /* fix vertical alignment in Chrome and Firefox */
+    vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    /* fix cursor style of increment and decrement buttons in Safari */
+    height: auto;
+}
+
+[type='search'] {
+    /* fix appearance in Chrome and Safari */
+    -webkit-appearance: textfield;
+    /* fix outline in Safari */
+    outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+    /* remove inner padding in Chrome and Safari on macOS */
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    /* fix inability to style clickable types in iOS and Safari */
+    -webkit-appearance: button;
+    /* change font properties to 'inherit' in Safari. */
+    font: inherit;
+}
+
+summary {
+    /* fix display in Chrome and Safari */
+    display: list-item;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(ibm-plex-sans-latin-400-normal.woff2) format('woff2');
+    /* latin range */
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* general */
+:root {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+
+    --gray-300: #acacac;
+    --gray-500: #7e7e7e;
+    --gray-800: #424242;
+    --teal-600: #33adb6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: #fff;
+}
+@media (max-width: 1400px) {
+    header {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: unset;
+        position: unset;
+        top: unset;
+    }
+}
+
+nav {
+    margin-right: 32px;
+}
+@media (max-width: 1400px) {
+    nav {
+        padding: 8px 0;
+    }
+}
+
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--gray-500);
+    letter-spacing: 1px;
+    margin-left: 32px;
+    white-space: nowrap;
+}
+@media (max-width: 960px) {
+    nav a {
+        margin-left: 8px;
+        margin-right: 16px;
+    }
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    background: var(--gray-800);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 106px;
+}
+@media (max-width: 1400px) {
+    .logo {
+        padding: 8px;
+        padding-left: 32px;
+    }
+}
+@media (max-width: 960px) {
+    .logo {
+        padding: 8px;
+    }
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo h1 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+p {
+    max-width: 565px;
+}
+
+.lead {
+    font-size: 32px;
+    max-width: unset;
+    margin: 80px 0;
+}
+
+main {
+    margin: 100px 180px;
+}
+@media (max-width: 960px) {
+    main {
+        margin: 32px 8px;
+    }
+}
+
+main h1 {
+    text-transform: uppercase;
+    color: var(--gray-500);
+    margin-bottom: 80px;
+}
+
+a {
+    color: var(--teal-600);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* plugs */
+.plug {
+    margin-top: 120px;
+    padding: 0 180px;
+}
+@media (max-width: 960px) {
+    .plug {
+        padding: 0 8px;
+    }
+}
+
+.plug-text {
+    font-size: 32px;
+    line-height: 1.3;
+}
+
+.plug a {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 24px;
+    color: var(--teal-600);
+    text-decoration: none;
+}
+
+.plug a::after {
+    content: ' »';
+}
+
+.plug a:hover {
+    text-decoration: underline;
+}
+
+/* home */
+.home-intro {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 960px) {
+    .home-intro {
+        height: calc(100vh - 76px);
+    }
+}
+
+.home-intro-content {
+    font-size: 40px;
+    text-align: center;
+    max-width: 720px;
+}
+@media (max-width: 960px) {
+    .home-intro-content {
+        font-size: 24px;
+        padding: 8px;
+    }
+}
+
+.home-about {
+    background: var(--teal-600);
+    color: #fff;
+}
+
+.home-about-content {
+    font-size: 32px;
+    padding: 100px 180px;
+}
+@media (max-width: 960px) {
+    .home-about-content {
+        padding: 8px;
+    }
+}
+
+.home-about-image {
+    width: 300px;
+    margin-top: 180px;
+    margin-bottom: 80px;
+}
+
+.home-philosophy {
+    border-bottom: 1px solid var(--teal-600);
+}
+
+.home-philosophy-content {
+    padding: 100px 180px;
+}
+@media (max-width: 960px) {
+    .home-philosophy-content {
+        padding: 8px;
+    }
+}
+
+/* about */
+.about-item {
+    display: flex;
+    margin-top: 64px;
+}
+@media (max-width: 960px) {
+    .about-item {
+        flex-direction: column;
+    }
+}
+
+.about-item-text {
+    margin-top: 8px;
+}
+
+.about-item-name {
+    font-size: 40px;
+}
+
+.about-item-title {
+    font-size: 32px;
+    color: var(--gray-300);
+}
+
+.about-item-image {
+    margin-right: 64px;
+}
+
+.about-item-image img {
+    width: 225px;
+    height: 225px;
+    border-radius: 8px;
+}
+
+.about-item-bio {
+    max-width: 650px;
+    color: var(--gray-800);
+}
+
+/* books */
+.books {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.books-item {
+    width: 250px;
+    height: 350px;
+    border: 2px solid var(--gray-800);
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    color: black;
+    margin-right: 32px;
+    margin-bottom: 32px;
+    padding: 8px;
+}
+
+.books-item:hover {
+    text-decoration: none;
+}
+
+.books-item-author {
+    font-size: 16px;
+}
