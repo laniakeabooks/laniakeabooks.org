@@ -2,14 +2,125 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="laniakea books: helping authors and working for the public domain">
+        <meta name="description" content="We help independent authors turn their words into public domain books.">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>laniakea books</title>
-        <link rel="stylesheet" href="{{ get_url(path='css/main.css') }}">
+        <title>{% block title %}laniakea books{% endblock title %}</title>
+        <link rel="stylesheet" href="/style.css">
+        {% include "partial_favicon.html" %}
     </head>
     <body>
+
+        {% block intro %}
+        <section class="home-intro">
+            <div class="home-intro-content">
+                We help independent authors turn their
+                words into public domain books.
+            </div>
+        </section>
+        {% endblock intro %}
+
+        <header>
+            <div class="logo">
+                <a href="/">
+                    <h1>
+                        laniakea books
+                    </h1>
+                </a>
+            </div>
+            <nav>
+                <a href="/how-it-works/">How it works</a>
+                <a href="/philosophy/">Philosophy</a>
+                <a href="/pricing/">Pricing</a>
+                <a href="/books/">Books</a>
+                <a href="/about/">About</a>
+                <a href="/i-have-a-book/">Have a book?</a>
+            </nav>
+        </header>
+
         {% block content %}
-        <h1>Hello, world!</h1>
+        <section class="home-about">
+            <div class="home-about-content">
+                <div class="home-about-image">
+                    {% include "telescope.html" %}
+                </div>
+                <p style="max-width: unset;">
+                    We support self-publishing authors and free knowledge.
+                </p>
+                <p>
+                    Our work includes:
+                </p>
+                <ul>
+                    <li>cover design</li>
+                    <li>layout design</li>
+                    <li>typesetting</li>
+                    <li>ISBN registration</li>
+                    <li>printing</li>
+                    <li>online hosting</li>
+                    <li>distribution to physical bookstores</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="home-philosophy">
+            <div class="home-philosophy-content">
+                <p class="lead">
+                    We want books to be free. That is, free of copyright.
+                    <br>In the public domain.
+                    <br>Belonging to everyone in the world.
+                </p>
+
+                <p>
+                    When I was a kid I learned there is this thing called patents. If you think of
+                    something first, the story goes, you can force everyone else to pay just
+                    because you told the official office that it was you who thought of it first.
+                    Ridiculous; I thought. There is no way this is true.
+                </p>
+
+                <p>
+                    Then, as a kid still, I learned about this other thing called intellectual
+                    property. That story is, if someone writes a song or a book or anything else
+                    that is a form of concepts, then whoever wants to do something with it needs
+                    to ask for permission from them. This includes changing it but also even
+                    sharing it or giving it away. This can’t be true, I thought again. How can one
+                    limit me from singing a song at the park I heard earlier?
+                </p>
+
+                <p>
+                    Today, I am still of the same mind. Intellectual property doesn’t make sense.
+                    What makes sense is to stop trying to limit ideas about ideas. What makes sense
+                    is for all intangible creations of the human intellect to be free.
+                </p>
+
+                <p>
+                    Theodore
+                    <br>founder of laniakea books
+                </p>
+            </div>
+        </section>
+
+        <div class="plug">
+            <div class="plug-text">
+                We enable authors to self-publish.
+            </div>
+            <a href="/how-it-works/">How it works</a>
+        </div>
+
+        <div class="plug">
+            <div class="plug-text">
+                Fair pricing.
+            </div>
+            <a href="/pricing/">Pricing</a>
+        </div>
+
+        <div class="plug">
+            <div class="plug-text">
+                Are you an author of a book
+                <br>that you want to publish under a public domain license?
+            </div>
+            <a href="/i-have-a-book/">I have a book</a>
+        </div>
         {% endblock content %}
+
+        <footer style="margin-top: 120px;"></footer>
     </body>
 </html>
