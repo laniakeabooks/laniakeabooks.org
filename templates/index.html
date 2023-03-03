@@ -12,28 +12,29 @@
 
         {% block intro %}
         <section class="home-intro">
-            <div class="home-intro-content">
+            <div class="home-intro-balancer">
+            </div>
+            <div class="home-intro-text">
                 We help independent authors turn their
                 words into public domain books.
+            </div>
+            <div class="home-intro-icon">
+                <a href="#home">»</a>
             </div>
         </section>
         {% endblock intro %}
 
-        <header>
-            <div class="logo">
-                <a href="/">
-                    <h1>
-                        laniakea books
-                    </h1>
-                </a>
-            </div>
+        <header id="home">
+            <a href="/#home" class="logo">
+                <h1>laniakea books</h1>
+            </a>
             <nav>
+                <a href="/i-have-a-book/">Have a book?</a>
                 <a href="/how-it-works/">How it works</a>
                 <a href="/philosophy/">Philosophy</a>
                 <a href="/pricing/">Pricing</a>
                 <a href="/books/">Books</a>
                 <a href="/about/">About</a>
-                <a href="/i-have-a-book/">Have a book?</a>
             </nav>
         </header>
 
@@ -43,8 +44,9 @@
                 <div class="home-about-image">
                     {% include "telescope.html" %}
                 </div>
-                <p style="max-width: unset;">
-                    We support self-publishing authors and free knowledge.
+                <p>
+                    We support self-publishing authors and free knowledge by publishing new books
+                    in the public domain.
                 </p>
                 <p>
                     Our work includes:
@@ -59,6 +61,7 @@
                     <li>distribution to physical bookstores</li>
                 </ul>
             </div>
+
         </section>
 
         <section class="home-philosophy">
@@ -100,14 +103,14 @@
 
         <div class="plug">
             <div class="plug-text">
-                We enable authors to self-publish.
+                See what we do in detail
             </div>
             <a href="/how-it-works/">How it works</a>
         </div>
 
         <div class="plug">
             <div class="plug-text">
-                Fair pricing.
+                Fair pricing
             </div>
             <a href="/pricing/">Pricing</a>
         </div>
