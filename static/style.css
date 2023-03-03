@@ -158,16 +158,29 @@ summary {
 
 /* general */
 :root {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.5;
-    text-rendering: optimizeLegibility;
-
+    --gray-100: #f7f7f7;
+    --gray-200: #e4e4e4;
     --gray-300: #acacac;
     --gray-500: #7e7e7e;
     --gray-800: #424242;
     --teal-600: #33adb6;
+
+    --small-size: 16px;
+    --content-size: 20px;
+    --lead-size: 32px;
+    --heading-size: 40px;
+
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: var(--content-size);
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+@media (max-width: 960px) {
+    :root {
+        --lead-size: 24px;
+        --content-size: 18px;
+    }
 }
 
 header {
@@ -193,30 +206,45 @@ nav {
 }
 @media (max-width: 1400px) {
     nav {
-        padding: 8px 0;
+        padding: 16px 0;
+    }
+}
+@media (max-width: 960px) {
+    nav {
+        margin-right: 0;
+        padding: 0;
     }
 }
 
 nav a {
+    white-space: nowrap;
     text-transform: uppercase;
     text-decoration: none;
     color: var(--gray-500);
     letter-spacing: 1px;
     margin-left: 32px;
-    white-space: nowrap;
 }
 @media (max-width: 960px) {
     nav a {
-        margin-left: 8px;
-        margin-right: 16px;
+        color: var(--teal-600);
+        display: block;
+        padding-left: 16px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid var(--gray-200);
+        letter-spacing: unset;
+        margin-left: 0;
     }
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background: var(--gray-100);
 }
 
 .logo {
+    color: #fff;
+    text-decoration: none;
     background: var(--gray-800);
     padding-top: 12px;
     padding-bottom: 12px;
@@ -231,13 +259,15 @@ nav a:hover {
 }
 @media (max-width: 960px) {
     .logo {
-        padding: 8px;
+        padding: 8px 16px;
     }
 }
 
-.logo a {
-    color: #fff;
+.logo:hover {
     text-decoration: none;
+    background: var(--teal-600);
+    color: #fff;
+    transition: all 0.1s;
 }
 
 .logo h1 {
@@ -245,8 +275,15 @@ nav a:hover {
 }
 
 h1 {
-    font-size: 40px;
     font-weight: 400;
+    font-size: 40px;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: var(--lead-size);
+    margin-top: 80px;
+    margin-bottom: 32px;
 }
 
 p {
@@ -254,9 +291,14 @@ p {
 }
 
 .lead {
-    font-size: 32px;
+    font-size: var(--lead-size);
     max-width: unset;
     margin: 80px 0;
+}
+@media (max-width: 960px) {
+    .lead {
+        margin: 48px 0;
+    }
 }
 
 main {
@@ -272,6 +314,11 @@ main h1 {
     text-transform: uppercase;
     color: var(--gray-500);
     margin-bottom: 80px;
+}
+@media (max-width: 960px) {
+    main h1 {
+        margin: 80px 0;
+    }
 }
 
 a {
@@ -295,7 +342,7 @@ a:hover {
 }
 
 .plug-text {
-    font-size: 32px;
+    font-size: var(--lead-size);
     line-height: 1.3;
 }
 
@@ -319,7 +366,8 @@ a:hover {
 .home-intro {
     height: 70vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 @media (max-width: 960px) {
@@ -328,16 +376,46 @@ a:hover {
     }
 }
 
-.home-intro-content {
+.home-intro-text {
     font-size: 40px;
     text-align: center;
     max-width: 720px;
+    margin-top: 32px;
 }
 @media (max-width: 960px) {
-    .home-intro-content {
+    .home-intro-text {
         font-size: 24px;
         padding: 8px;
     }
+}
+
+@keyframes movedown {
+    from {
+        transform: translateY(0);
+    }
+  
+    to {
+        transform: translateY(32px);
+    }
+}
+.home-intro-icon {
+    margin-bottom: 32px;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-name: movedown;
+    animation-timing-function: ease-in;
+}
+
+.home-intro-icon a {
+    font-size: var(--lead-size);
+    color: #000;
+    display: inline-block;
+    transform: rotate(90deg);
+}
+
+.home-intro-icon a {
+    text-decoration: none;
 }
 
 .home-about {
@@ -346,13 +424,17 @@ a:hover {
 }
 
 .home-about-content {
-    font-size: 32px;
+    font-size: var(--lead-size);
     padding: 100px 180px;
 }
 @media (max-width: 960px) {
     .home-about-content {
         padding: 8px;
     }
+}
+
+.home-about-content p {
+    max-width: 800px;
 }
 
 .home-about-image {
@@ -394,7 +476,7 @@ a:hover {
 }
 
 .about-item-title {
-    font-size: 32px;
+    font-size: var(--lead-size);
     color: var(--gray-300);
 }
 
@@ -429,7 +511,7 @@ a:hover {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    color: black;
+    color: var(--gray-800);
     margin-right: 32px;
     margin-bottom: 32px;
     padding: 8px;
