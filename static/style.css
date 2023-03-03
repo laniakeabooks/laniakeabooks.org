@@ -364,7 +364,7 @@ a:hover {
 
 /* home */
 .home-intro {
-    height: 70vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
