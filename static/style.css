@@ -401,7 +401,7 @@ a:hover {
 .home-intro-icon {
     margin-bottom: 32px;
     animation-direction: alternate;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-iteration-count: infinite;
     animation-name: movedown;
     animation-timing-function: ease-in;
