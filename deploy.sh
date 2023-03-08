@@ -20,6 +20,7 @@ main() {
     zola build
 
     git push -v origin master
+    git push -v srht master
 
     # copy over html files
     rsync -avz --progress --delete public/ deploy@5.75.194.9:/var/www/laniakea
