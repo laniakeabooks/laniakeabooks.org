@@ -286,6 +286,10 @@ h2 {
     margin-bottom: 32px;
 }
 
+ul {
+    max-width: 565px;
+}
+
 p {
     max-width: 565px;
 }
