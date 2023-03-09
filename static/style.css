@@ -472,11 +472,12 @@ a:hover {
 }
 
 .about-item-text {
-    margin-top: 8px;
+    margin-top: 32px;
 }
 
 .about-item-name {
     font-size: 40px;
+    line-height: 1;
 }
 
 .about-item-title {
