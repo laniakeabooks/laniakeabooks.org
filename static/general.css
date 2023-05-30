@@ -170,6 +170,8 @@ summary {
     --lead-size: 32px;
     --heading-size: 40px;
 
+    --standard-para-width: 565px;
+
     font-family: 'IBM Plex Sans', sans-serif;
     font-weight: 400;
     font-size: var(--content-size);
@@ -288,11 +290,11 @@ h2 {
 }
 
 ul {
-    max-width: 565px;
+    max-width: var(--standard-para-width);
 }
 
 p {
-    max-width: 565px;
+    max-width: var(--standard-para-width);
 }
 
 .lead {
@@ -497,7 +499,7 @@ a:hover {
 }
 
 .about-item-bio {
-    max-width: 650px;
+    max-width: var(--standard-para-width);
     color: var(--gray-800);
 }
 
