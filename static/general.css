@@ -156,7 +156,7 @@ summary {
     unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
-/* general */
+/* root */
 :root {
     --gray-100: #f7f7f7;
     --gray-200: #e4e4e4;
@@ -183,6 +183,7 @@ summary {
     }
 }
 
+/* base */
 header {
     display: flex;
     justify-content: space-between;
@@ -500,7 +501,7 @@ a:hover {
     color: var(--gray-800);
 }
 
-/* books */
+/* books section */
 .books {
     display: flex;
     flex-wrap: wrap;
@@ -528,4 +529,33 @@ a:hover {
 
 .books-item-author {
     font-size: 16px;
+}
+
+.books-item-lead {
+    font-size: var(--subheading-size);
+}
+
+/* blog section */
+.blog-list-item {
+    margin-bottom: 64px;
+}
+
+.blog-list-item a {
+    display: block;
+    font-size: 32px;
+}
+
+.blog-list-item time {
+    color: var(--gray-300);
+}
+
+.blog-post-title {
+    text-transform: none;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.blog-post-date {
+    color: var(--gray-300);
+    margin-bottom: 80px;
 }

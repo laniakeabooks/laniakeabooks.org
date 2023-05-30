@@ -1,0 +1,321 @@
+/* reset */
+html {
+    /* fix line height in all browsers */
+    line-height: 1.15;
+    /* prevent adjustments of font size after orientation changes in iOS */
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    /* remove margin in all browsers */
+    margin: 0;
+}
+
+hr {
+    /* fix height in Firefox */
+    height: 0;
+    /* fix inheritance of border color in Firefox */
+    color: inherit;
+}
+
+abbr[title] {
+    /* fix text decoration in Chrome, Edge, Safari. */
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    /* fix font weight in Edge and Safari */
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp,
+pre {
+    /* improve consistency of default fonts in all browsers */
+    font-family: monospace;
+    /* correct the odd 'em' font sizing in all browsers */
+    font-size: 1em;
+}
+
+small {
+    /* fix font size in all browsers */
+    font-size: 80%;
+}
+
+/* prevent sub and sup from affecting the line height in all browsers */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+table {
+    /* remove text indentation from table contents in Chrome and Safari */
+    text-indent: 0;
+    /* fix table border color inheritance in Chrome and Safari */
+    border-color: inherit;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    /* fix font styles in all browsers */
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    /* remove margin in Firefox and Safari */
+    margin: 0;
+}
+
+button,
+select {
+    /* remove inheritance of text transform in Edge and Firefox */
+    text-transform: none;
+}
+
+button,
+[type='button'],
+[type='reset'],
+[type='submit'] {
+    /* fix inability to style clickable types in iOS and Safari */
+    -webkit-appearance: button;
+}
+
+/* remove inner border and padding in Firefox */
+::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+:-moz-focusring {
+    /* restore focus styles unset by the previous rule */
+    outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+    /* remove additional ':invalid' styles in Firefox */
+    box-shadow: none;
+}
+
+progress {
+    /* fix vertical alignment in Chrome and Firefox */
+    vertical-align: baseline;
+}
+
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+    /* fix cursor style of increment and decrement buttons in Safari */
+    height: auto;
+}
+
+[type='search'] {
+    /* fix appearance in Chrome and Safari */
+    -webkit-appearance: textfield;
+    /* fix outline in Safari */
+    outline-offset: -2px;
+}
+
+::-webkit-search-decoration {
+    /* remove inner padding in Chrome and Safari on macOS */
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    /* fix inability to style clickable types in iOS and Safari */
+    -webkit-appearance: button;
+    /* change font properties to 'inherit' in Safari. */
+    font: inherit;
+}
+
+summary {
+    /* fix display in Chrome and Safari */
+    display: list-item;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'IBM Plex Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(ibm-plex-sans-latin-400-normal.woff2) format('woff2');
+    /* latin range */
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+/* root */
+:root {
+    --gray-100: #f7f7f7;
+    --gray-200: #e4e4e4;
+    --gray-300: #acacac;
+    --gray-500: #7e7e7e;
+    --gray-800: #424242;
+    --teal-600: #33adb6;
+
+    --small-size: 16px;
+    --content-size: 20px;
+    --lead-size: 32px;
+    --heading-size: 40px;
+    --subheading-size: 24px;
+
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: var(--content-size);
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+}
+@media (max-width: 960px) {
+    :root {
+        --lead-size: 24px;
+        --content-size: 18px;
+    }
+}
+
+/* book base header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    margin-right: 32px;
+}
+
+nav a {
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--gray-500);
+    margin-left: 32px;
+}
+
+nav a:hover {
+    text-decoration: none;
+    background: var(--gray-100);
+}
+
+.header-logo {
+    color: #fff;
+    text-decoration: none;
+    background: var(--gray-200);
+    font-weight: 300;
+    padding: 4px 32px;
+}
+
+.header-logo:hover {
+    text-decoration: none;
+    background: var(--teal-600);
+    color: #fff;
+    transition: all 0.1s;
+}
+
+.header-logo h1 {
+    margin: 0;
+}
+
+.header-title {
+    color: var(--gray-500);
+}
+
+.header-title a {
+    color: inherit;
+}
+
+.header-right {
+    color: var(--gray-200);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 4px 16px;
+}
+
+/* book base */
+h1 {
+    font-weight: 400;
+    font-size: var(--heading-size);
+}
+
+h2 {
+    font-weight: 400;
+    font-size: var(--lead-size);
+    margin-top: 80px;
+    margin-bottom: 32px;
+}
+
+h3 {
+    font-size: var(--subheading-size);
+}
+
+a {
+    color: var(--teal-600);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    color: var(--gray-500);
+}
+
+/* book page */
+main {
+    max-width: 600px;
+    margin: 100px auto;
+}
+@media (max-width: 960px) {
+    main {
+        padding: 0 8px;
+        margin: 32px auto;
+    }
+}
+
+main h1 {
+    color: var(--gray-500);
+    margin-bottom: 80px;
+}
+@media (max-width: 960px) {
+    main h1 {
+        margin: 80px 0;
+    }
+}
+
+.continue {
+    text-align: center;
+    padding-top: 64px;
+    font-size: var(--subheading-size);
+}
+
+.footnote-definition {
+    margin-bottom: 16px;
+}
+
+.footnote-definition sup {
+    color: var(--gray-300);
+    z-index: -10;  /* needed to be below the header element */
+}
+
+.footnote-definition p {
+    display: inline;
+    color: var(--gray-300);
+    font-size: 16px;
+}
+
+.footnote-definition a {
+    color: inherit;
+}
