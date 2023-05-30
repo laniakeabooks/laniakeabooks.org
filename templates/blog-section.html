@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block title %}blog — laniakea books{% endblock title %}
+
+{% block intro %}
+{% endblock intro %}
+
+{% block content %}
+<main>
+    <h1>Blog</h1>
+
+    {% for page in section.pages %}
+    <div class="blog-list-item">
+        <a href="{{ page.permalink }}">
+            {{ page.title }}
+        </a>
+        <time datetime="{{ page.date | date(format="%+") }}" itemprop="datePublished">
+            {{ page.date | date(format='%B %e, %Y') }}
+        </time>
+    </div>
+    {% endfor %}
+</main>
+
+<div class="plug">
+    <div class="plug-text">
+        Read more about us
+    </div>
+    <a href="/">Home</a>
+</div>
+{% endblock content %}
