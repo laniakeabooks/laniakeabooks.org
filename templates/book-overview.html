@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block title %}how it works — laniakea books{% endblock title %}
+
+{% block intro %}
+{% endblock intro %}
+
+{% block content %}
+<main>
+    <h1>{{ section.title }}</h1>
+    {{ section.content|safe }}
+</main>
+{% endblock content %}

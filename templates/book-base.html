@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="{{ page.title }}">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ page.title }}</title>
+        <link rel="stylesheet" href="/book.css">
+        {% include "partial_favicon.html" %}
+    </head>
+    <body>
+        <header>
+            <a href="/books/" class="header-logo">
+                laniakea books
+            </a>
+            <div class="header-title">
+                {% set book = get_section(path=page.ancestors | last) %}
+                <a href="{{ book.permalink }}">
+                    {{ book.title }}
+                </a>
+            </div>
+            <div class="header-right">Public Domain</div>
+        </header>
+
+        {% block content %}
+        {% endblock content %}
+
+    </body>
+</html>
