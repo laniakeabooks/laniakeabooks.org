@@ -146,16 +146,6 @@ summary {
     display: list-item;
 }
 
-/* fonts */
-@font-face {
-    font-family: 'IBM Plex Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: url(ibm-plex-sans-latin-400-normal.woff2) format('woff2');
-    /* latin range */
-    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
-}
-
 /* root */
 :root {
     --gray-100: #f7f7f7;
@@ -189,6 +179,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
 
 nav {
@@ -230,6 +226,13 @@ nav a:hover {
 .header-title {
     color: var(--gray-500);
 }
+@media (max-width: 600px) {
+    .header-title {
+        text-align: center;
+        margin-top: 64px;
+        font-size: var(--lead-size);
+    }
+}
 
 .header-title a {
     color: inherit;
@@ -241,6 +244,12 @@ nav a:hover {
     text-decoration: none;
     font-weight: 300;
     padding: 4px 16px;
+}
+@media (max-width: 600px) {
+    .header-right {
+        text-align: center;
+        margin-top: 64px;
+    }
 }
 
 /* book base */
