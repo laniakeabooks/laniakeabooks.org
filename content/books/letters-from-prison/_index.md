@@ -14,7 +14,7 @@ title = "Letters from Prison"
 * ISBN 978-0-00-00000-0
 * 72 pages
 * 132 × 197 mm
-* Publication date: 1 June 2023
+* Publication date: 12 June 2023
 * Language: English
 
 ## Table of Contents
