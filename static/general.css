@@ -504,12 +504,21 @@ a:hover {
 }
 
 /* books section */
-.books {
+.books img {
+    width: 500px;
+}
+@media (max-width: 600px) {
+    .books img {
+        width: 100%;
+    }
+}
+
+.books-list {
     display: flex;
     flex-wrap: wrap;
 }
 
-.books-item {
+.books-list-item {
     width: 250px;
     height: 350px;
     border: 2px solid var(--gray-800);
@@ -525,19 +534,28 @@ a:hover {
     padding: 8px;
 }
 
-.books-item:hover {
+.books-list-item:hover {
     text-decoration: none;
 }
 
-.books-item-author {
+.books-list-item-author {
     font-size: 16px;
 }
 
-.books-item-lead {
+.books-list-item-lead {
     font-size: var(--subheading-size);
 }
 
 /* blog section */
+.blog img {
+    width: 500px;
+}
+@media (max-width: 600px) {
+    .blog img {
+        width: 100%;
+    }
+}
+
 .blog-list-item {
     margin-bottom: 64px;
 }
