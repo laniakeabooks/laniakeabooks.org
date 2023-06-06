@@ -4,6 +4,8 @@ template = "book-overview.html"
 title = "Letters from Prison"
 +++
 
+![front cover](front.png)
+
 ## Download
 
 * [epub](letter-from-prison-book.epub)
@@ -11,11 +13,12 @@ title = "Letters from Prison"
 
 ## Details
 
-* ISBN 978-0-00-00000-0
+* ISBN 978-1-7394500-0-7
 * 72 pages
 * 132 × 197 mm
 * Publication date: 12 June 2023
 * Language: English
+* Sources: [github.com/laniakeabooks/book-letters-from-prison](https://github.com/laniakeabooks/book-letters-from-prison)
 
 ## Table of Contents
 
@@ -43,3 +46,26 @@ title = "Letters from Prison"
 ## Read
 
 <a href="/books/letters-from-prison/part-1/" class="books-item-lead">Begin reading »</a>
+
+## Pay
+
+This book is available to [read online](part-1/) for free.
+
+### Paperback
+
+[Pre-order](https://buy.stripe.com/9AQdR64KYgQ9eSk5kk) paperback version. Ships
+in September 2023 from London, England.
+
+Cost: £8.00 (book) + £4.25 (shipping). Pre-order
+[here](https://buy.stripe.com/9AQdR64KYgQ9eSk5kk).
+
+### Digital
+
+We encourage you to [read Letters from Prison](part-1/) before deciding to pay
+for it.
+
+Cost: £8.00 (pdf and epub digital files). Pay
+[here](https://buy.stripe.com/7sI28oa5i57rbG8dQR).
+
+Download: [pdf](letter-from-prison-book.pdf) and
+[epub](letter-from-prison-book.epub).
