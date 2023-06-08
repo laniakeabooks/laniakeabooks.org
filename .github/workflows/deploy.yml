@@ -41,7 +41,7 @@ jobs:
         run: zola build
 
       - name: Pull changes
-        run: rsync -avz --progress --delete public/ deploy@laniakeabooks.org:/var/www/laniakea
+        run: rsync -avz --progress --delete -e "ssh -i ~/.ssh/server.key" public/ deploy@laniakeabooks.org:/var/www/laniakea
 
       - name: Reload server
         run: ssh deploy@laniakeabooks.org 'sudo systemctl reload caddy'
