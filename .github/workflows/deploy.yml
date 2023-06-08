@@ -19,13 +19,19 @@ jobs:
       - name: Install Zola
         run: sudo snap install --edge zola
 
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build website
+        run: zola build
+
       - name: Configure SSH
         run: |
           mkdir -p ~/.ssh/
           echo "$SSH_KEY" > ~/.ssh/server.key
           chmod 600 ~/.ssh/server.key
           cat >> ~/.ssh/config << EOF
-          Host laniakeabooks-server
+          Host laniakea
             HostName laniakeabooks.org
             User deploy
             IdentityFile ~/.ssh/server.key
@@ -34,15 +40,10 @@ jobs:
         env:
           SSH_KEY: ${{ secrets.SSH_KEY }}
 
-      - name: Checkout
-        uses: actions/checkout@v3
-
-      - name: Build website
-        run: zola build
-
-      - name: Pull changes
+      - name: Sync changes
         run: |
           rsync --version
+          ssh laniakea uname -a
           rsync -avz --progress --delete -e "ssh -i ~/.ssh/server.key" public/ deploy@laniakeabooks.org:/var/www/laniakea
 
       - name: Reload server
