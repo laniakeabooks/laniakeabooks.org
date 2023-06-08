@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Install Zola
-        run: snap install --edge zola
+        run: sudo snap install --edge zola
 
       - name: Configure SSH
         run: |
