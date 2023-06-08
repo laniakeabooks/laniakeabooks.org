@@ -13,7 +13,7 @@ jobs:
   deploy:
     environment:
       name: production
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: "https://laniakeabooks.org/"
     runs-on: ubuntu-22.04
     steps:
       - name: Install Zola
