@@ -41,10 +41,7 @@ jobs:
           SSH_KEY: ${{ secrets.SSH_KEY }}
 
       - name: Sync changes
-        run: |
-          rsync --version
-          ssh laniakea uname -a
-          rsync -avz --progress --delete -e "ssh -i ~/.ssh/server.key" public/ deploy@laniakeabooks.org:/var/www/laniakea
+        run: rsync -avz --progress --delete -e "ssh -i ~/.ssh/server.key" public/ deploy@laniakeabooks.org:/var/www/laniakea
 
       - name: Reload server
         run: ssh deploy@laniakeabooks.org 'sudo systemctl reload caddy'
