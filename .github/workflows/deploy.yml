@@ -33,6 +33,9 @@ jobs:
           EOF
         env:
           SSH_KEY: ${{ secrets.SSH_KEY }}
+      
+      - name: Build website
+        run: zola build
 
       - name: Pull changes
         run: rsync -avz --progress --delete public/ deploy@laniakeabooks.org:/var/www/laniakea
