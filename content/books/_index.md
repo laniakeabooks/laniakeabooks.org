@@ -1,4 +1,4 @@
 +++
-sort_by = "title"
+sort_by = "date"
 template = "book-section.html"
 +++
