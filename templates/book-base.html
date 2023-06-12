@@ -14,9 +14,8 @@
                 laniakea books
             </a>
             <div class="header-title">
-                {% set book = get_section(path=page.ancestors | last) %}
-                <a href="{{ book.permalink }}">
-                    {{ book.title }}
+                <a href="../">
+                    {{ page.extra.book_title }}
                 </a>
             </div>
             <div class="header-right">Public Domain</div>
