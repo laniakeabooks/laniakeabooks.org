@@ -1,6 +1,9 @@
 +++
 title = "Interlude III: Everything Everywhere"
-template = "book-page.html"
+template = "book-reading.html"
+
+[extra]
+book_title = "Letters from Prison"
 +++
 
 # Interlude III: Everything Everywhere

@@ -1,6 +1,9 @@
 +++
 title = "Rethinking the Industry"
-template = "book-page.html"
+template = "book-reading.html"
+
+[extra]
+book_title = "Letters from Prison"
 +++
 
 # Part 3: Rethinking the Industry

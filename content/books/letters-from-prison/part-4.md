@@ -1,6 +1,9 @@
 +++
 title = "On Freedom"
-template = "book-page.html"
+template = "book-reading.html"
+
+[extra]
+book_title = "Letters from Prison"
 +++
 
 # Part 4: On Freedom

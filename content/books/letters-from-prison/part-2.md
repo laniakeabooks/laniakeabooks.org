@@ -1,6 +1,9 @@
 +++
 title = "Letters from Prison"
-template = "book-page.html"
+template = "book-reading.html"
+
+[extra]
+book_title = "Letters from Prison"
 +++
 
 # Part 2: All Problems are Interpersonal

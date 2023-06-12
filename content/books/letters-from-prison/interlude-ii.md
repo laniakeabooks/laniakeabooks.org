@@ -1,6 +1,9 @@
 +++
 title = "Interlude II: Atom Heart Mother"
-template = "book-page.html"
+template = "book-reading.html"
+
+[extra]
+book_title = "Letters from Prison"
 +++
 
 # Interlude II: Atom Heart Mother

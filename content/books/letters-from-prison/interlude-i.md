@@ -1,6 +1,9 @@
 +++
 title = "Interlude I: Homage to Chocolate"
-template = "book-page.html"
+template = "book-reading.html"
+
+[extra]
+book_title = "Letters from Prison"
 +++
 
 # Interlude I: Homage to Chocolate
