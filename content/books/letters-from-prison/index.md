@@ -1,7 +1,10 @@
 +++
-sort_by = "title"
-template = "book-overview.html"
 title = "Letters from Prison"
+date = "2023-06-12"
+template = "book-page.html"
+
+[extra]
+author = "Theodore Keloglou"
 +++
 
 ![front cover](front.png)
