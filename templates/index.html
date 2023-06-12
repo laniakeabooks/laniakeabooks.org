@@ -2,10 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="We help independent authors turn their words into public domain books.">
+        <meta name="description" content="{% block metadescription %}We help independent authors turn their words into public domain books.{% endblock metadescription %}">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <title>{% block title %}laniakea books{% endblock title %}</title>
+
         <link rel="stylesheet" href="/general.css">
+
+        {% block extra_head %}
+        {% endblock extra_head %}
+
         {% include "partial_favicon.html" %}
     </head>
     <body>

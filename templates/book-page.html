@@ -1,6 +1,16 @@
 {% extends 'index.html' %}
 
-{% block title %}books — laniakea books{% endblock title %}
+{% block title %}{{ page.title }} — laniakea books{% endblock title %}
+
+{% block metadescription %}a book of the public domain - laniakea books{% endblock metadescription %}
+
+{% block extra_head %}
+<style>
+    header {
+        position: unset;
+    }
+</style>
+{% endblock extra_head %}
 
 {% block intro %}
 {% endblock intro %}
