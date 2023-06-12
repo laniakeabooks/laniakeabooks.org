@@ -1,7 +1,13 @@
-{% extends 'book-base.html' %}
+{% extends 'index.html' %}
+
+{% block title %}books — laniakea books{% endblock title %}
+
+{% block intro %}
+{% endblock intro %}
 
 {% block content %}
-<main>
+<main class="books">
+    <h1>{{ page.title }}</h1>
     {{ page.content|safe }}
 </main>
 {% endblock content %}
