@@ -337,6 +337,26 @@ a:hover {
     text-decoration: underline;
 }
 
+.table-container {
+    max-width: 600px;
+}
+
+table {
+    width: 100%;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid var(--gray-200);
+    padding: 4px 8px;
+}
+
 /* plugs */
 .plug {
     margin-top: 120px;
