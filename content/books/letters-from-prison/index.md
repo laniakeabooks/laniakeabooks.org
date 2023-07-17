@@ -11,8 +11,8 @@ author = "Theodore Keloglou"
 
 ## Download
 
-* [epub](letter-from-prison.epub)
-* [pdf](letter-from-prison.pdf)
+* [epub](letters-from-prison.epub)
+* [pdf](letters-from-prison.pdf)
 
 ## Details
 
@@ -70,5 +70,5 @@ for it.
 Cost: £8.00 (pdf and epub digital files). Pay
 [here](https://buy.stripe.com/7sI28oa5i57rbG8dQR).
 
-Download: [pdf](letter-from-prison.pdf) /
-[epub](letter-from-prison.epub)
+Download: [pdf](letters-from-prison.pdf) /
+[epub](letters-from-prison.epub)
