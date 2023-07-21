@@ -57,7 +57,7 @@ This book is available to [read online](part-1/) for free.
 ### Paperback
 
 [Order](https://buy.stripe.com/9AQdR64KYgQ9eSk5kk) paperback version. Ships
-in within a month from London, England.
+within a month from London, England.
 
 Cost: £8.00 (book) + £4.25 (shipping). Order
 [here](https://buy.stripe.com/9AQdR64KYgQ9eSk5kk).
