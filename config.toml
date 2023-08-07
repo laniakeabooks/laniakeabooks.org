@@ -9,6 +9,7 @@ build_search_index = false
 
 # Generate RSS feed
 generate_feed = true
+feed_filename = "rss.xml"
 
 [markdown]
 # Whether to do syntax highlighting
