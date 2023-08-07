@@ -8,6 +8,7 @@
         <title>{% block title %}laniakea books{% endblock title %}</title>
 
         <link rel="stylesheet" href="/general.css">
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
 
         {% block extra_head %}
         {% endblock extra_head %}
