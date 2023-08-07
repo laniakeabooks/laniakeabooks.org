@@ -1,6 +1,9 @@
 # The URL the site will be built for
 base_url = "https://laniakeabooks.org"
 
+title = "Laniakea Books"
+description = "Public domain publishing house"
+
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = false
 
