@@ -9,6 +9,20 @@ author = "Theodore Keloglou"
 
 ![front cover](front.png)
 
+Society can be prison.
+
+In this collection of essays the author reflects on the contemporary enslavement
+of individuals under the guise of school, the economy, and achievement. Children
+and young people, interpersonal problems and communities, and start- ups and the
+industry are the main themes with freedom guiding the final part as well as
+weaving itself throughout as a recurring motif.
+
+Can we realise what freedom is if we lack it?
+
+Among the main four parts, three interludes intersperse, each dedicated to the
+appreciation of a cultural artefact: an old song, a new film, and timeless
+chocolate.
+
 ## Download
 
 * [epub](letters-from-prison.epub)
