@@ -10,7 +10,7 @@ book_title = "Letters from Prison"
 
 _Theme from an Imaginary Western_[^gilmour]. Progressive symphonic perfection. Such is the transcendence, that the band has been now criticizing this piece of their work, many years after its release[^song].
 
-Inspired by a pregnant woman who had been fitted with a heart peacemaker, Atom Heart Mother provokes the subject of sapiens-made devices enabling the — still? — unexplained miracle of this world: life, soul, consciousness.
+Inspired by a pregnant woman who had been fitted with a heart pacemaker, Atom Heart Mother provokes the subject of sapiens-made devices enabling the — still? — unexplained miracle of this world: life, soul, consciousness.
 
 The lyrics follow.
 

@@ -64,7 +64,7 @@ To make the present case of Bitcoin worse:
 * It has very high fees for consumer-scoped transactions
 * It significantly contributes to global warming
 
-We have to give up all the above in order to benefit from 100% controlling our money—which we cannot spend directly but only store it.
+We have to put up with all of the above in order to benefit from 100% controlling our money—which we cannot spend directly but only store it.
 
 Bitcoin becoming more expensive over time may be a reason to buy. “Investing” in the idea that more people will be convinced to be bank-independent. However, any short term (or even long term) gains not backed by value in essence (either social or even purely material) are not interesting to me. Until we can figure out how Bitcoin can _actually_ contribute to world society, I denounce it.
 

@@ -80,9 +80,9 @@ _Pointless curricula content._ Humanity’s hive mind, the Internet, makes every
 
 _Irrelevant methods of teaching._ Lifeless lectures, indifferent presentations, eternal monologues, stressful exams; even digitally assisted learning and/or interactive learning—unfortunately, all of these have turned out to be disappointing and ineffective. True learning happens in one’s mind, alone, with a community of people around for support—not for pouring knowledge into an empty mind-bucket.
 
-_Total disregard for art._ Virtually everything is revolving around STEM. Art, in any form, is completely disfavoured by everyone: teachers, students, parents, lawmakers. Art’s timeless honesty has perpetuates the human era since its inception, yet at some point, it was deemed unworthy for the intellectual foundation of new humans.
+_Total disregard for art._ Virtually everything is revolving around STEM. Art, in any form, is completely disfavoured by everyone: teachers, students, parents, lawmakers. Art’s timeless honesty has perpetuated the human era since its inception, yet at some point, it was deemed unworthy for the intellectual foundation of new humans.
 
-_Partial disregard for the humanities._ Along with its aforementioned conceptual subclass, human disciples have fallen out of favour, as being ineffective in building wealth—the core value of the West’s social imaginary.
+_Partial disregard for the humanities._ Along with its aforementioned conceptual subclass, human disciplines have fallen out of favour, as being ineffective in building wealth—the core value of the West’s social imaginary.
 
 _Total disregard for physical knowledge._ Disturbingly small amount of school-approved time in exercising, sports, or any other bodily activity.
 
