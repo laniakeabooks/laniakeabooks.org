@@ -9,7 +9,7 @@
 <main class="books">
     <h1>Books</h1>
     <div class="books-list">
-        {% for page in section.pages %}
+        {% for page in section.pages | reverse %}
         <a href="{{ page.permalink }}" class="books-list-item">
             <div class="books-list-item-title">{{ page.title }}</div>
             <div class="books-list-item-separator"></div>
