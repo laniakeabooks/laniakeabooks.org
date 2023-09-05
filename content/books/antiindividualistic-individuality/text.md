@@ -869,4 +869,4 @@ the preservation of their property and their egoistic selves.”
 ## About the author
 
 Gabriel Kuhn is an Austrian-born writer and translator living in Sweden. He
-blogs at lefttwothree.org.
+blogs at [lefttwothree.org](https://lefttwothree.org/).
