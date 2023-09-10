@@ -38,7 +38,7 @@ author = "Gabriel Kuhn"
 
 [Get paperback](https://buy.stripe.com/aEUbIY5P2dDXdOgfZ1) version.
 
-Cost: £5.00 (book) + £4.25 (shipping).
+Cost: £5.00 (book) + £8.50 (shipping).
 
 Ships within 4 weeks from London, England.
 

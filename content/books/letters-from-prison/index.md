@@ -68,7 +68,7 @@ chocolate.
 
 [Get paperback](https://buy.stripe.com/9AQdR64KYgQ9eSk5kk) version.
 
-Cost: £8.00 (book) + £4.25 (shipping).
+Cost: £8.00 (book) + £8.50 (shipping).
 
 Ships within 2 weeks from London, England.
 
