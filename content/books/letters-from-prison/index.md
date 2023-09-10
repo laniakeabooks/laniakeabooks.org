@@ -64,25 +64,22 @@ chocolate.
 
 <a href="/books/letters-from-prison/part-1/" class="books-item-lead">Begin reading »</a>
 
-## Pay
+## Paperback
 
-This book is available to [read online](part-1/) for free.
+[Get paperback](https://buy.stripe.com/9AQdR64KYgQ9eSk5kk) version.
 
-### Paperback
+Cost: £8.00 (book) + £4.25 (shipping).
 
-[Order](https://buy.stripe.com/9AQdR64KYgQ9eSk5kk) paperback version. Ships
-within 2 weeks from London, England.
+Ships within 2 weeks from London, England.
 
-Cost: £8.00 (book) + £4.25 (shipping). Order
-[here](https://buy.stripe.com/9AQdR64KYgQ9eSk5kk).
+## Digital
 
-### Digital
+[Pay for digital](https://buy.stripe.com/7sI28oa5i57rbG8dQR) version.
 
-We encourage you to [read Letters from Prison](part-1/) before deciding to pay
-for it.
+This book is available to [read online](part-1/) for free. We encourage you to
+read it before deciding to pay for it.
 
-Cost: £8.00 (pdf and epub digital files). Pay
-[here](https://buy.stripe.com/7sI28oa5i57rbG8dQR).
+Cost: £8.00 (pdf and epub digital files).
 
 Download: [pdf](letters-from-prison.pdf) /
 [epub](letters-from-prison.epub)

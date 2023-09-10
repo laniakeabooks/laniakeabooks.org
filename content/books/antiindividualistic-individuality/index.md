@@ -34,25 +34,22 @@ author = "Gabriel Kuhn"
 
 <a href="/books/antiindividualistic-individuality/text/" class="books-item-lead">Full text »</a>
 
-## Pay
+## Paperback
 
-This book is available to [read online](text/) for free.
+[Get paperback](https://buy.stripe.com/aEUbIY5P2dDXdOgfZ1) version.
 
-### Paperback
+Cost: £5.00 (book) + £4.25 (shipping).
 
-[Order](https://buy.stripe.com/aEUbIY5P2dDXdOgfZ1) paperback version. Ships
-within 4 weeks from London, England.
+Ships within 4 weeks from London, England.
 
-Cost: £5.00 (book) + £4.25 (shipping). Order
-[here](https://buy.stripe.com/aEUbIY5P2dDXdOgfZ1).
+## Digital
 
-### Digital
+[Pay for digital](https://buy.stripe.com/5kAaEUa5ibvP9y09AC) version.
 
-We encourage you to [read Letters from Prison](text/) before deciding to pay
-for it.
+This book is available to [read online](text/) for free. We encourage you to
+read it before deciding to pay for it.
 
-Cost: £5.00 (pdf and epub digital files). Pay
-[here](https://buy.stripe.com/5kAaEUa5ibvP9y09AC).
+Cost: £5.00 (pdf and epub digital files).
 
 Download: [pdf](antiindividualistic-individuality.pdf) /
 [epub](antiindividualistic-individuality.epub)
