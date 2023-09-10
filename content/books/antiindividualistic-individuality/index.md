@@ -9,6 +9,10 @@ author = "Gabriel Kuhn"
 
 ![front cover](front.png)
 
+A second iteration of [Alpine Anarchist Productions](https://alpineanarchist.org/)’
+_Antiindividualistic Individuality. A Concept_, by Teoman Gee, originally
+published as a pamphlet in 2003.
+
 ## Download
 
 * [epub](antiindividualistic-individuality.epub)
