@@ -17,22 +17,8 @@
     </head>
     <body>
 
-        {% block intro %}
-        <section class="home-intro">
-            <div class="home-intro-balancer">
-            </div>
-            <div class="home-intro-text">
-                We help independent authors turn their
-                words into public domain books.
-            </div>
-            <div class="home-intro-icon">
-                <a href="#home">»</a>
-            </div>
-        </section>
-        {% endblock intro %}
-
         <header id="home">
-            <a href="/#home" class="logo">
+            <a href="/" class="logo">
                 <h1>laniakea books</h1>
             </a>
             <nav>
@@ -48,10 +34,19 @@
 
         {% block content %}
         <section class="home-about">
-            <div class="home-about-content">
+            <div class="home-about-intro">
                 <div class="home-about-image">
                     {% include "telescope.html" %}
                 </div>
+                <p>
+                    We help independent authors turn their
+                    words into public domain books.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="home-about-content">
                 <p>
                     We support independent authors and free knowledge by
                     publishing books in the public domain.
