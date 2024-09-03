@@ -2,9 +2,6 @@
 
 {% block title %}handbook - laniakea books{% endblock title %}
 
-{% block intro %}
-{% endblock intro %}
-
 {% block content %}
 <main>
     <h1>Handbook</h1>
@@ -12,6 +9,8 @@
     <p class="lead">
         What about the specifics of our book production?
     </p>
+
+    <h2 id="book-text">1. Book text</h2>
 
     <ol>
         <li>
@@ -23,7 +22,6 @@
                 <li>author bio</li>
             </ul>
         </li>
-        <li>Decide book dimensions</li>
         <li>
             Typeset book
             <ul>
@@ -32,6 +30,12 @@
                 <li>typst</li>
             </ul>
         </li>
+    </ol>
+
+    <h2 id="book-design">2. Physical book design</h2>
+
+    <ol>
+        <li>Decide book dimensions</li>
         <li>Decide paper gsm and calculate spine width</li>
         <li>
             Design cover
@@ -42,28 +46,43 @@
                 <li>spine</li>
             </ul>
         </li>
+    </ol>
+
+    <h2 id="printing">3. Printing</h2>
+
+    <ol>
         <li>Decide number of copies</li>
         <li>Get quotes from printers</li>
         <li>Decide retail price</li>
         <li>
-            Issue and assign ISBN
+            ISBN
             <ul>
                 <li>
-                    <a href="https://www.nielsenisbnstore.com/">https://www.nielsenisbnstore.com/</a>
+                    Issue and assign ISBN
+                    <ul>
+                        <li>
+                            <a href="https://www.nielsenisbnstore.com/">https://www.nielsenisbnstore.com/</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Generate EAN-13 ISBN barcode with zint
+                    <ul>
+                        <li>
+                            <a href="https://en.wikipedia.org/wiki/International_Article_Number">https://en.wikipedia.org/wiki/International_Article_Number</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/zint/zint">https://github.com/zint/zint</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </li>
-        <li>
-            Generate EAN-13 ISBN barcode with zint
-            <ul>
-                <li>
-                    <a href="https://en.wikipedia.org/wiki/International_Article_Number">https://en.wikipedia.org/wiki/International_Article_Number</a>
-                </li>
-                <li>
-                    <a href="https://github.com/zint/zint">https://github.com/zint/zint</a>
-                </li>
-            </ul>
-        </li>
+    </ol>
+
+    <h2 id="online-presence">4. Online presence</h2>
+
+    <ol>
         <li>
             Supply book data
             <ul>
@@ -82,7 +101,6 @@
             </ul>
         </li>
         <li>Add book files on website</li>
-
     </ol>
 
 </main>
