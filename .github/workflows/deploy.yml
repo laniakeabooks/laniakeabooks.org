@@ -33,7 +33,7 @@ jobs:
           chmod 600 ~/.ssh/server.key
           cat >> ~/.ssh/config << EOF
           Host laniakea
-            HostName laniakeabooks.org
+            HostName 65.21.187.95
             User root
             IdentityFile ~/.ssh/server.key
             StrictHostKeyChecking no
