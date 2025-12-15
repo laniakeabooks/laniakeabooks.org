@@ -45,5 +45,17 @@ jobs:
         run: |
           rsync -avz --progress --delete --chown=deploy:www-data public/ laniakea:/var/www/laniakea
 
+      - name: Write Caddyfile
+        run: |
+          ssh laniakea 'cat > /etc/caddy/laniakea.caddy << EOF
+          laniakeabooks.org {
+                  root * /var/www/laniakea
+                  file_server {
+                          hide .git
+                  }
+                  encode zstd gzip
+          }
+          EOF'
+
       - name: Reload server
         run: ssh laniakea 'systemctl reload caddy'
