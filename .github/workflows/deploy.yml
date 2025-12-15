@@ -2,8 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
+    branches: [ main ]
 
 concurrency:
   group: "production"
@@ -14,13 +13,15 @@ jobs:
     environment:
       name: production
       url: "https://laniakeabooks.org/"
-    runs-on: ubuntu-22.04
+
+    runs-on: ubuntu-24.04
+
     steps:
       - name: Install Zola
         run: sudo snap install --edge zola
 
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Build website
         run: zola build
@@ -33,7 +34,7 @@ jobs:
           cat >> ~/.ssh/config << EOF
           Host laniakea
             HostName laniakeabooks.org
-            User deploy
+            User root
             IdentityFile ~/.ssh/server.key
             StrictHostKeyChecking no
           EOF
@@ -41,7 +42,8 @@ jobs:
           SSH_KEY: ${{ secrets.SSH_KEY }}
 
       - name: Sync changes
-        run: rsync -avz --progress --delete public/ laniakea:/var/www/laniakea
+        run: |
+          rsync -avz --progress --delete --chown=deploy:www-data public/ laniakea:/var/www/laniakea
 
       - name: Reload server
-        run: ssh laniakea 'sudo systemctl reload caddy'
+        run: ssh laniakea 'systemctl reload caddy'
